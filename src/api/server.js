@@ -53,4 +53,3 @@ if (CONFIG.APP_ZONE === 'production') {
     console.log(`*********************************`)
   })
 }
-
