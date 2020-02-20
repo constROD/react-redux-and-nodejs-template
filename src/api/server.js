@@ -42,12 +42,12 @@ if (CONFIG.APP_ZONE === 'production') {
     console.log(`*********************************`)
   })
 } else {
-  app.listen(CONFIG.APP_PORT, () => {
+  app.listen(CONFIG.API_PORT, () => {
     console.log(`_________________________________`)
     console.log(`*********************************`)
     console.log(`------------ RUNNING ------------`)
     console.log(`[APP]  : ${CONFIG.APP_NAME}`)
-    console.log(`[PORT] : ${CONFIG.APP_PORT}`)
+    console.log(`[PORT] : ${CONFIG.API_PORT}`)
     console.log(`[ZONE] : ${CONFIG.APP_ZONE}`)
     console.log(`_________________________________`)
     console.log(`*********************************`)
