@@ -18,7 +18,7 @@ const processEnv = new webpack.DefinePlugin({
 module.exports = {
   entry: ['babel-polyfill', './src/client/index.js'],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'client_build'),
     filename: 'index.js'
   },
   module: {
@@ -49,7 +49,7 @@ module.exports = {
     alias: { 'react-dom': '@hot-loader/react-dom' }
   },
   devServer: {
-    port: 3000,
+    port: CONFIG.APP_PORT,
     hot: true,
     historyApiFallback: true,
   },
@@ -58,7 +58,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/client/index.html',
-      favicon: './src/client/shared/assets/images/bxp.png',
+      favicon: './src/client/shared/assets/images/dev-img.png',
       title: CONFIG.APP_NAME
     })
   ]

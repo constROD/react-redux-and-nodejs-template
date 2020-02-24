@@ -11,12 +11,12 @@ const CONFIG = require('../config/App')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(express.static(path.join(__dirname, '../../dist')))
+app.use(express.static(path.join(__dirname, '../../client_build')))
 
 /* Route for Client */
 app.get('*', (req, res, next) => {
   res.setHeader('Content-Type', 'text/html')
-  res.sendFile(path.join(__dirname, '../../dist/index.html'))
+  res.sendFile(path.join(__dirname, '../../client_build/index.html'))
 })
 
 /* Routes */

@@ -10,7 +10,7 @@ const API_PORT = APP_ZONE == 'development' ? (process.env.API_PORT || 3001) : AP
 
 module.exports = {
   /* APP */
-  APP_NAME: process.env.APP_NAME || 'Dev App',
+  APP_NAME: process.env.APP_NAME || 'Rod Development App',
   APP_ZONE,
   APP_PORT,
 

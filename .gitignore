@@ -2,7 +2,7 @@
 node_modules
 
 # Build
-dist
+client_build
 
 # Lock
 package-lock.json
